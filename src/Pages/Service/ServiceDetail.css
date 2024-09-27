@@ -1,0 +1,140 @@
+.whole-main{
+    border: 2px solid #F1F1F1;
+    border-radius: 10px;
+    height: 124vh;
+    display: flex;
+    flex-direction: column;
+   }
+   .profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  .profile-header h3,  .profile-header h2{
+    font-weight: 600    ;
+  }
+
+  /* Phần bên trái: chứa tên, email, số điện thoại */
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Phần bên phải: chứa trạng thái */
+  .profile-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    color: #e05d3b;
+  }
+
+  /* Tạo đường kẻ dọc chia giữa hai phần */
+  .divider {
+    height: 60px;
+    width: 1px;
+    background-color: #ccc;
+    margin: 0 20px;
+  }
+
+  /* Thông tin liên hệ */
+  .contact-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+  }
+
+  .contact-info {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  .basic-info {
+    border: 2px solid #F1F1F1;
+    border-radius: 10px;
+    height: 50vh;
+    width: 60%; /* Điều chỉnh kích thước để vừa với không gian */
+    margin: 10px;
+  }
+  .basic-info-header{
+    background-color: #92D7EE;
+  }
+   .basic-info-header h1{
+    border-bottom: 2px solid #F1F1F1;
+    padding: 15px 20px;
+    font-size: larger;
+    
+    font-weight: 600;
+  }
+  .basic-info-main {
+    padding: 20px;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .value {
+    color: #333;
+  }
+  
+  /* Styling for the tags */
+  .tag {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    display: inline-block;
+  }
+  .profile-main {
+    display: flex; /* Sửa từ direction thành display */
+    flex-direction: row;
+    gap: 20px; /* Khoảng cách giữa các div con nếu cần */
+  }
+  .main-info {
+    
+    height: 50vh;
+    width: 33%; /* Điều chỉnh kích thước để vừa với không gian */
+  }
+  
+  .major-info{
+    border: 2px solid #F1F1F1;
+    border-radius: 10px;
+    height: 50vh;
+    width: 100%;
+    margin: 10px 10px;
+  }
+  .feedback{
+    border: 2px solid #F1F1F1;
+    border-radius: 10px;
+    height: 50vh;
+    width: 100%;
+    margin: 10px 10px;
+    position: relative;
+    top: 30px;
+    right: 10px;
+  }
+/*  */
+/* Button edit */
+.edit-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+}

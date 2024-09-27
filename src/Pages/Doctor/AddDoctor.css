@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.first-text{
+    /* color: ; */
+    font-size: xx-large;
+}
+form {
+    margin: 20px;
+  }
+  
+  .first-text {
+    color: #4A5568;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  button {
+    margin-top: 16px;
+  }
+  

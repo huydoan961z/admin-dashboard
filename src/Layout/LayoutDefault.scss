@@ -1,0 +1,124 @@
+.layout-default {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    height: 2000px;
+    // overflow-x: hidden;
+    // overflow-y: hidden;
+
+    &_arm {
+        background: #92D7EE;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_logo {
+            margin-left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        &_content {
+            font-size: 20px;
+            margin-right: 20px;
+            cursor: pointer;
+
+        }
+        &_button{
+            margin-right: 20px;
+            
+            
+            padding: 10px 10px;
+            position: relative;
+            bottom: 10px;
+            font-size: large;
+            font-weight: 500;
+        }
+        &_button:active{
+            color: white;
+
+        }
+    }
+
+    &_body {
+        display: flex;
+        flex: 1;
+
+        &_header {
+            background: #F1F1F1;
+            width: 15%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .layout-default_menu {
+                width: 100%;
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    li {
+                        margin-bottom: 20px;
+                        position: relative; // Để submenu có thể hiển thị trượt
+                        a {
+                            color: #45C3D2;
+                            padding: 10px 20px;
+                            text-decoration: none;
+                            display: block;
+                            width: 100%;
+
+                            &.active {
+                                color: white;
+                                background: #45C3D2;
+                            }
+                        }
+
+                        .menu_sub {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: max-height 0.5s ease; // Thêm hiệu ứng trượt mượt
+                            opacity: 0; // Ẩn đi lúc đầu
+                            transition: max-height 0.5s ease, opacity 0.5s ease; // Cả opacity và max-height
+                            
+                            li {
+                                a {
+                                    color: #45C3D2;
+                                    // padding: 5px 10px;
+                                    text-decoration: none;
+
+                                    &.active {
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover .menu_sub {
+                            max-height: 200px; // Kích thước phù hợp với số lượng mục con
+                            opacity: 1; // Hiển thị menu khi hover
+                        }
+                    }
+                }
+            }
+        }
+
+        &_main {
+            width: 80%;
+            padding: 20px;
+        }
+    }
+}
+
