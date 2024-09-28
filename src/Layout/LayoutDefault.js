@@ -18,7 +18,7 @@ function LayoutDefault() {
                 <div onClick={backHome} className="layout-default_arm_content">Admin Management System</div>
                 <button className='layout-default_arm_button'>Log out </button>
             </header>
-            <div className="layout-default_body">
+            <div className="layout-default_body">           
                 {/* <Breadcrumbs
                     separator=" > "
                     item={NavLink}
